@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Coca, the Perfect Taste</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">¿Qué es COCA?</a></li>
+          <li><a href="#mission">Misión</a></li>
+          <li><a href="#vision">Visión</a></li>
+          <li><a href="#social-media">Redes Sociales</a></li>
+          <li><a href="#survey">Encuesta</a></li>
+          <li><a href="#manufacturer-data">Datos del Fabricante</a></li>
+        </ul>
+      </nav>
+      <h1>Coca, the Perfect Taste</h1>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>¿Qué es COCA?</h2>
+        <p>
+          Somos una empresa que se especializa en la fabricación artesanal de
+          chocolates en Colombia.
+        </p>
+        <img
+          src="/COCA/img/COCA.jpg"
+          alt="COCA LOGO"
+          title="Coca logo"
+          class="responsive-img"
+        />
+      </section>
+
+      <section id="mission">
+        <h2>MISIÓN</h2>
+        <p>
+          Nuestra misión como empresa es crear chocolates que puedan ser consumidos
+          por cualquier persona. Creemos que el chocolate más que un simple alimento
+          es una experiencia que puede transportar a las personas a otro lugar y
+          tiempo. Cuando se consuma el chocolate queremos que se sienta como algo
+          especial, algo que haga sentir emociones felices y lleve la mente a
+          aquellos recuerdos y momentos hermosos. Por eso utilizamos los mejores
+          ingredientes y técnicas para crear chocolates de la más alta calidad y
+          estamos comprometidos a ofrecer chocolates que sean deliciosos, únicos y
+          memorables. Buscamos innovar en la fabricación de chocolates y no solo de
+          manera estética, sino también en la creación de productos saludables para
+          las personas con problemas de salud (diabetes o problemas relacionados con
+          el azúcar).
+        </p>
+      </section>
+
+      <section id="vision">
+        <h2>VISIÓN</h2>
+        <p>
+          Nuestra visión para el año 2024 es poder hacer renombre de nuestros
+          chocolates en la feria empresarial institucional, poder brindar el mejor
+          producto digno de competir por su puesto y ser el más gustado del público.
+          En el año 2025 queremos seguir compitiendo en la feria institucional y
+          brindar un mejor producto gracias a la experiencia del año anterior,
+          agrandando renombre de la empresa y aumentando la clientela. Para los
+          próximos años como empresa queremos expandir nuestras fronteras a más
+          partes del municipio, iniciando en Soacha y luego buscando poner puestos o
+          locales en la ciudad de Bogotá D.C.
+        </p>
+        <p>
+          En COCA, estamos comprometidos con la satisfacción del cliente, el
+          desarrollo sostenible y la excelencia en todo lo que hacemos. Creemos que
+          con nuestra pasión, calidad y enfoque en la innovación, estamos listos
+          para alcanzar nuevas alturas y ser reconocidos como una referencia en la
+          industria del chocolate.
+        </p>
+      </section>
+
+      <section id="social-media">
+        <h2>Redes Sociales</h2>
+        <p><b>PROXIMAMENTE</b></p>
+        <div class="social-links">
+          <div class="social-item">
+            <strong>INSTAGRAM</strong>
+            <img src="/COCA/img/IG.png" alt="COCA INSTAGRAM" title="COCA INSTAGRAM" class="social-img" />
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">COCA INSTA</a>
+          </div>
+          <div class="social-item">
+            <strong>TikTok</strong>
+            <img src="/COCA/img/TIKTOK.png" alt="COCA TIK TOK" title="COCA TIK TOK" class="social-img" />
+            <a href="https://tiktok.com/es/" target="_blank" rel="noopener">COCA TIK TOK</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="survey">
+        <h2>Encuesta Base</h2>
+        <div class="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+        <form id="survey-form">
+          <div class="form-group">
+            <label for="frecuencia">¿Con qué frecuencia consumes chocolate? <span class="required">*</span></label>
+            <select name="frecuencia" id="frecuencia" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Diario">Diario</option>
+              <option value="Varias veces a la semana">Varias veces a la semana</option>
+              <option value="Semanalmente">Semanalmente</option>
+              <option value="Quincenalmente">Quincenalmente</option>
+              <option value="Mensualmente">Mensualmente</option>
+              <option value="Ocasionalmente">Ocasionalmente</option>
+            </select>
+            <small class="error-message" id="frecuencia-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label>¿Qué tipo de chocolate prefieres? <span class="required">*</span></label>
+            <div class="radio-group">
+              <label><input type="radio" name="tipo" value="Chocolate con leche" required /> Chocolate con leche</label>
+              <label><input type="radio" name="tipo" value="Chocolate negro" required /> Chocolate negro</label>
+              <label><input type="radio" name="tipo" value="Chocolate blanco" required /> Chocolate blanco</label>
+              <label><input type="radio" name="tipo" value="Chocolate con frutos secos" required /> Chocolate con frutos secos</label>
+              <label><input type="radio" name="tipo" value="Chocolate con rellenos" required /> Chocolate con rellenos</label>
+              <label><input type="radio" name="tipo" value="Otro" id="tipo-otro-radio" /> Otro:</label>
+            </div>
+            <input type="text" name="tipo-otro" id="tipo-otro" placeholder="Especifica" disabled />
+            <small class="error-message" id="tipo-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label>¿Qué presentaciones de chocolate te parecen más atractivas? <span class="required">*</span></label>
+            <div class="radio-group">
+              <label><input type="radio" name="presentacion" value="Tabletas" required /> Tabletas</label>
+              <label><input type="radio" name="presentacion" value="Bombones" required /> Bombones</label>
+              <label><input type="radio" name="presentacion" value="Trufas" required /> Trufas</label>
+              <label><input type="radio" name="presentacion" value="Barras" required /> Barras</label>
+              <label><input type="radio" name="presentacion" value="Granulados" required /> Granulados</label>
+              <label><input type="radio" name="presentacion" value="Bebida" required /> Bebida</label>
+              <label><input type="radio" name="presentacion" value="Otro" id="presentacion-otro-radio" /> Otro:</label>
+            </div>
+            <input type="text" name="presentacion-otro" id="presentacion-otro" placeholder="Especifica" disabled />
+            <small class="error-message" id="presentacion-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="precio">¿En qué rango de precios te gusta comprar chocolate? <span class="required">*</span></label>
+            <select name="precio" id="precio" required>
+              <option value="">Selecciona una opción</option>
+              <option value="$1,000-$4,500">$1,000-$4,500</option>
+              <option value="$5,000-$10,000">$5,000-$10,000</option>
+              <option value="$10,000-$20,000">$10,000-$20,000</option>
+              <option value="$20,000-$30,000">$20,000-$30,000</option>
+              <option value="$30,000-$40,000">$30,000-$40,000</option>
+              <option value="Más de $40,000">Más de $40,000</option>
+            </select>
+            <small class="error-message" id="precio-error"></small>
+          </div>
+
+          <div class="form-group">
+            <label>¿Qué factores son más importantes para ti al elegir un chocolate? <span class="required">*</span></label>
+            <div class="radio-group">
+              <label><input type="radio" name="factores" value="Sabor" required /> Sabor</label>
+              <label><input type="radio" name="factores" value="Precio" required /> Precio</label>
+              <label><input type="radio" name="factores" value="Marca" required /> Marca</label>
+              <label><input type="radio" name="factores" value="Calidad" required /> Calidad</label>
+              <label><input type="radio" name="factores" value="Ingredientes" required /> Ingredientes</label>
+              <label><input type="radio" name="factores" value="Presentación" required /> Presentación</label>
+              <label><input type="radio" name="factores" value="Otro" id="factores-otro-radio" /> Otro:</label>
+            </div>
+            <input type="text" name="factores-otro" id="factores-otro" placeholder="Especifica" disabled />
+            <small class="error-message" id="factores-error"></small>
+          </div>
+
+          <button type="submit">Enviar Encuesta</button>
+          <p class="thank-you"><strong>MUCHAS GRACIAS POR SU ATENCIÓN</strong></p>
+        </form>
+      </section>
+
+      <section id="manufacturer-data">
+        <h2>Datos del Fabricante</h2>
+        <p>
+          Nombre del Fabricante: Coca: the Perfect Taste<br />
+          Dirección: Cra. 38 #34, Soacha, Cundinamarca<br />
+          Contacto: Teléfono: +57 3205130408 | Correo electrónico: <a href="mailto:cocaempresa554@gmail.com">cocaempresa554@gmail.com</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Coca, the Perfect Taste. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="confirmation-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>¡Encuesta Enviada!</h2>
+        <p>Gracias por completar nuestra encuesta. ¡Tu opinión es muy importante para nosotros!</p>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
